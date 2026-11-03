@@ -150,13 +150,14 @@ h1,h2,h3,h4,h5{letter-spacing:0!important}
 const TRACKS = [
   // Guide shape: { tier: "core" | "opt" (optional), href: "folder/index.html", kicker: "Topic", title: "...",
   //   desc: "...", tags: ["..."], meta: [["10", "questions"]] }
-  { id: "aws", n: "01", title: "AWS Certification", blurb: "AWS course, exam prep আর certificate", color: "#f97316", guides: [] },
-  { id: "dsa", n: "02", title: "DSA & Problem Solving", blurb: "Data structure আর algorithm", color: "#0ea5e9", guides: [] },
-  { id: "oop", n: "03", title: "OOP & Design", blurb: "OOP, design principle আর pattern", color: "#6366f1", guides: [] },
-  { id: "sql", n: "04", title: "DBMS & SQL", blurb: "Query, join, transaction, index", color: "#10b981", guides: [] },
-  { id: "sysdesign", n: "05", title: "System Design", blurb: "Scalability, caching, API design", color: "#a855f7", guides: [] },
-  { id: "os", n: "06", title: "Operating System", blurb: "Kernel, process, thread, scheduling", color: "#ec4899", guides: [] },
-  { id: "net", n: "07", title: "Networking", blurb: "TCP/IP, HTTP, DNS, browser", color: "#14b8a6", guides: [] },
+  { id: "aws", n: "01", title: "AWS Certification", blurb: "AWS course, exam prep আর certificate", color: "#f97316", guides: [
+    { href: "https://www.coursera.org/specializations/aws-fundamentals", kicker: "Coursera · Specialization", title: "AWS Fundamentals",
+      desc: "AWS-এর core service, security, on-premises থেকে AWS-এ migration আর serverless app-এর basics। Beginner level, AWS-এর নিজের instructor-দের lab সহ।",
+      tags: ["IAM", "S3", "DynamoDB", "API Gateway", "Serverless"], meta: [["3", "courses"], ["50", "hours"], ["Beginner", ""]] },
+    { href: "https://www.coursera.org/professional-certificates/aws-cloud-solutions-architect", kicker: "Coursera · Professional Certificate", title: "AWS Cloud Solutions Architect",
+      desc: "Compute, storage, database, networking আর security-র architecture design, data lake আর AWS Certified Solutions Architect - Associate exam-এর প্রস্তুতি।",
+      tags: ["EC2", "VPC", "RDS", "Data Lake", "SAA exam prep"], meta: [["4", "courses"], ["15", "labs"], ["Intermediate", ""]] },
+  ] },
 ];
 
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
