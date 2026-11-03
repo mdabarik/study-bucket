@@ -158,6 +158,14 @@ const TRACKS = [
       desc: "Compute, storage, database, networking আর security-র architecture design, data lake আর AWS Certified Solutions Architect - Associate exam-এর প্রস্তুতি।",
       tags: ["EC2", "VPC", "RDS", "Data Lake", "SAA exam prep"], meta: [["4", "courses"], ["15", "labs"], ["Intermediate", ""]] },
   ] },
+  { id: "prompt", n: "02", title: "Prompt Engineering", blurb: "Prompt engineering, RAG, LangChain আর AI agent", color: "#8b5cf6", guides: [
+    { href: "https://www.coursera.org/learn/fundamentals-of-ai-agents-using-rag-and-langchain", kicker: "Coursera · IBM Course", title: "Fundamentals of AI Agents Using RAG and LangChain",
+      desc: "RAG কীভাবে কাজ করে, FAISS দিয়ে vector search, in-context learning, prompt template আর LangChain-এর chain, tool ও agent দিয়ে AI agent বানানো।",
+      tags: ["RAG", "Prompt Engineering", "LangChain", "FAISS", "Hugging Face"], meta: [["3", "modules"], ["9", "hours"], ["Intermediate", ""]] },
+    { href: "https://www.coursera.org/professional-certificates/ibm-rag-and-agentic-ai", kicker: "Coursera · IBM Professional Certificate", title: "IBM RAG and Agentic AI",
+      desc: "RAG pipeline, vector database, multimodal AI আর LangGraph, CrewAI, AutoGen ও MCP দিয়ে autonomous AI agent বানানো, শেষে একটা capstone project।",
+      tags: ["RAG", "LangGraph", "CrewAI", "Vector DB", "MCP"], meta: [["10", "courses"], ["1", "capstone"], ["Advanced", ""]] },
+  ] },
 ];
 
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
